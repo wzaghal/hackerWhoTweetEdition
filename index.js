@@ -27,7 +27,6 @@ $(function() {
 //javascript and/or jquery to load user Tweet into randomTwitter class
 	$('.randomTwitter').text(user.tweet);
 
-	$('.score').append(score);
 
 
 
@@ -38,7 +37,8 @@ $(function() {
 		if (this.src === user.imageUrl){
 			console.log('you clicked on the right user');
 			//add css for correct user
-			//add to score
+			score = score + 1;
+			$('.scoreNum').empty().append(score);
 		}
 		else{
 			console.log('you clicked on wrong user');
