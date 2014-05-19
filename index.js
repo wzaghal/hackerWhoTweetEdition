@@ -30,8 +30,16 @@ $(function() {
 
 
 //click event on image, and checking if the src they clicked on is equal to the imageURL that belongs to User
+	// $('.profile').on('click', function(e){
+	// 	e.preventDefault();
+		
+	// 	if ((this).attr('src') === user.imageUrl){
+	// 		console.log('you clicked on the right user');
+	// 	}
+	// 	else{
+	// 		console.log('you clicked on wrong user');
+	// 	}
 
-
-
+	// });
 });
 
