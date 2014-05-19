@@ -44,6 +44,8 @@ $(function() {
 			console.log('you clicked on wrong user');
 			//add css for wrong user
 			//add to score
+			score = score - 1;
+			$('.scoreNum').empty().append(score);
 		}
 
 	});
