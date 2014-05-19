@@ -40,36 +40,42 @@ h2 {
   font-family: 'Chewy', cursive;
   font-size: 40px;
   padding: 10px 0 0 0;
+  margin: 2%;
 }
 
 div.randomTwitter {
   width: 50%;
-  height: 200px;
+  height: 80px;
   margin: 1% auto;
-  padding: 20px;
+  padding: 6% 0 0 0;
   clear: both;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  border: 1px solid black;
 }
 
 div.score {
+  font-family: 'Chewy', cursive;
+  font-size: 20px;
   float: right;
   padding: 10px;
   margin: 0 5%;
 }
 
 a.profile {
-  width: 20%;
+  margin: 3% 5%;
 }
 a.profile img {
   border-radius: 50%;
-  border: 2px solid #fab937;
+  border: 5px solid #fab937;
+  width: 200px;
+  height: 200px;
 }
 
 a.profile1 {
   float: left;
-  margin: 1% 5%;
 }
 
 a.profile2 {
   float: right;
-  margin: 1% 5%;
 }
