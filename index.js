@@ -11,3 +11,19 @@ var wrongUser= {
 }
 
 
+$(function() {
+
+//javascript and/or jquery to load first image with User's imageURL
+
+//javascript and/or jquery to load second image with wrongUser's imageUrl
+
+//javascript and/or jquery to load user Tweet into randomTwitter class
+
+
+
+//click event on image, and checking if the src they clicked on is equal to the imageURL that belongs to User
+
+
+
+});
+
