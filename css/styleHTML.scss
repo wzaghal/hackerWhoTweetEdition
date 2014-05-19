@@ -66,7 +66,8 @@ padding: 10px 0 0 0;
 }
 
 div.randomTwitter {
-	height: 300px; //we might delete this when it has a content
+	padding: 20px;
+	clear: both;
 }
 
 div.score {
@@ -76,10 +77,22 @@ div.score {
 }
 
 a.profile {
+	width: 20%;
 
 	img {
 		border-radius: 50%;
+		border: 2px solid $orange;
 	}
+}
+
+a.profile1 {
+	float: left;
+	margin: 1% 5%;
+}
+
+a.profile2 {
+	float: right;
+	margin: 1% 5%;
 }
 
 
