@@ -26,7 +26,7 @@ Page Style
 *******/
 div.wrapper {
   text-align: center;
-  background: #5db5de url("img/shattered.png") repeat;
+  background: #5db5de url("../img/shattered.png") repeat top right;
 }
 
 h1 {
@@ -46,7 +46,7 @@ h2 {
 
 div.randomTwitter {
   width: 50%;
-  height: 80px;
+  height: 60px;
   margin: 1% auto;
   padding: 6% 0 0 0;
   clear: both;
@@ -60,7 +60,10 @@ div.score {
   font-size: 20px;
   float: right;
   padding: 10px;
-  margin: 0 5%;
+  margin: 5%;
+}
+div.score p {
+  margin: 0;
 }
 
 a.profile {
