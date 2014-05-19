@@ -1,0 +1,58 @@
+/*******
+Colors
+*******/
+
+$dark-blue: #066591;
+$light-blue: #5DB5DE ;
+$orange: #FAB937;
+$light-orange: #F7F78F;
+$dark-grey: #292929;
+
+
+/****
+Fonts
+*******/
+
+@mixin font {
+	font-family: 'Chewy', cursive;
+}
+
+@mixin font-bold {
+	font-family: 'Droid Sans', sans-serif;
+}
+
+
+/******
+General Style
+
+*********/
+
+html, body, h1, h2, span, div, a, img, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+/*****
+Page Style
+*******/
+
+div.wrapper {
+	
+
+}
+
+
+h1 {
+	@include font-bold;
+	font-size: 50px;
+}
+
+
+h2 {
+@include font;
+font-size: 40px;
+}
+
+
+
+

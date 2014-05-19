@@ -1,0 +1,27 @@
+/*******
+Colors
+*******/
+/****
+Fonts
+*******/
+/******
+General Style
+
+*********/
+html, body, h1, h2, span, div, a, img, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/*****
+Page Style
+*******/
+h1 {
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Chewy', cursive;
+  font-size: 40px;
+}
