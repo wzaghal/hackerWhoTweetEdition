@@ -18,13 +18,13 @@ $(function() {
 
 //javascript and/or jquery to load first image with User's imageURL
 	$('a.profile1 img').attr('src', user.imageUrl);
-	console.log(user.imageUrl);
 
 //javascript and/or jquery to load second image with wrongUser's imageUrl
 	$('a.profile2 img').attr('src', wrongUser.imageUrl);
 
 //javascript and/or jquery to load user Tweet into randomTwitter class
 	$('.randomTwitter').text(user.tweet);
+
 
 
 
