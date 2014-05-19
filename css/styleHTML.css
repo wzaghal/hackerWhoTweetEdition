@@ -19,9 +19,44 @@ h2:before, h2:after {
   font: normal 50px/1 'Genericons';
   vertical-align: middle;
   color: #5db5de;
-  margin: 0 4%;
 }
 
+/*******
+KEYFRAMES
+************/
+@-webkit-keyframes flyingOne {
+  0% {
+    top: 20%;
+    left: 0%;
+  }
+
+  100% {
+    top: 20%;
+    left: 22%;
+  }
+}
+@-webkit-keyframes secondFlight {
+  0% {
+    top: 20%;
+    right: 100%;
+  }
+
+  100% {
+    top: 20%;
+    right: 22%;
+  }
+}
+@-webkit-keyframes questionFlight {
+  0% {
+    top: 2%;
+    left: 0%;
+  }
+
+  100% {
+    top: 2%;
+    left: 330px;
+  }
+}
 /******
 General Style
 
@@ -45,6 +80,8 @@ Page Style
 div.wrapper {
   text-align: center;
   background: #5db5de url("../img/shattered.png") repeat top right;
+  position: relative;
+  min-height: 700px;
 }
 
 h1 {
@@ -53,6 +90,20 @@ h1 {
   padding: 20px;
   margin: 0 auto;
   text-align: left;
+  color: #292929;
+}
+h1:after {
+  content: '\f457';
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font: normal 65px/1 'Genericons';
+  vertical-align: middle;
+  color: #292929;
+  margin: 0 1%;
+  position: absolute;
+  -webkit-animation: questionFlight 5s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
 }
 
 h2 {
@@ -64,9 +115,13 @@ h2 {
 }
 h2:before {
   content: '\f202';
+  position: absolute;
+  -webkit-animation: flyingOne 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
 }
 h2:after {
   content: '\f202';
+  position: absolute;
+  -webkit-animation: secondFlight 10s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
 }
 
 div.randomTwitter {
@@ -74,20 +129,26 @@ div.randomTwitter {
   height: 50px;
   margin: 1% auto;
   padding: 2% 0;
-  clear: both;
   font-family: Arial, sans-serif;
   font-size: 14px;
   border: 1px solid black;
   border-radius: 10px;
   background-color: white;
+  color: #292929;
+  position: absolute;
+  right: 25%;
+  top: 70%;
 }
 
 div.score {
   font-family: 'Chewy', cursive;
   font-size: 20px;
-  float: right;
+  position: absolute;
+  bottom: 5px;
+  right: 2%;
   padding: 10px;
   margin: 2% 5%;
+  color: #292929;
 }
 div.score p {
   margin: 0;
@@ -102,11 +163,18 @@ a.profile img {
   max-width: 200px;
   max-height: 200px;
 }
+a.profile img:hover {
+  border: 5px solid #f7f78f;
+}
 
 a.profile1 {
-  float: left;
+  position: absolute;
+  top: 28%;
+  left: 4%;
 }
 
 a.profile2 {
-  float: right;
+  position: absolute;
+  top: 28%;
+  right: 4%;
 }

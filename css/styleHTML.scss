@@ -39,7 +39,45 @@ Placeholders
     font: normal 50px/1 'Genericons';
     vertical-align: middle;
     color: $light-blue;
-    margin: 0 4%;
+}
+
+
+/*******
+KEYFRAMES
+************/
+
+@-webkit-keyframes flyingOne {
+  0%   {top:20%;left: 0%;}
+  // 10%  {top:25%;left: 10%;}
+  // 20%  {top:22%;left: 20%;}
+  // 30%  {top:25%;left: 30%;}
+  // 40%  {top:28%;left: 40%;}
+  // 50%  {top:26%;left: 55%;}
+  // 60%  {top:29%;left: 60%;}
+  // 70%  {top:27%;left: 70%;}
+  // 80%  {top:31%;left: 80%;}
+  // 90%  {top:28%;left: 95%;}
+  100% {top:20%;left: 22%;} 
+}
+
+@-webkit-keyframes secondFlight {
+  0%   {top:20%;right: 100%;}
+  // 10%  {bottom:22%;left: 10%;}
+  // 20%  {bottom:26%;left: 20%;}
+  // 30%  {bottom:22%;left: 30%;}
+  // 40%  {bottom:25%;left: 40%;}
+  // 50%  {bottom:27%;left: 55%;}
+  // 60%  {bottom:24%;left: 60%;}
+  // 70%  {bottom:26%;left: 70%;}
+  // 80%  {bottom:28%;left: 80%;}
+  // 90%  {bottom:27%;left: 95%;}
+  100% {top:20%;right: 22%;} 
+}
+
+
+@-webkit-keyframes questionFlight {
+  0%   {top:2%;left: 0%;}
+  100% {top:2%;left: 330px;} 
 }
 
 /******
@@ -67,6 +105,8 @@ Page Style
 div.wrapper {
 	text-align: center;
 	background: $light-blue url('../img/shattered.png') repeat top right;
+	position: relative;
+	min-height: 700px;
 }
 
 
@@ -76,6 +116,21 @@ h1 {
 	padding: 20px;
 	margin: 0 auto;
 	text-align: left;
+	color: $dark-grey;
+
+	&:after {
+		content: '\f457';
+		display: inline-block;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-font-smoothing: antialiased;
+	    -o-font-smoothing: antialiased;
+	    font: normal 65px/1 'Genericons';
+	    vertical-align: middle;
+	    color: $dark-grey;
+	    margin: 0 1%;
+	    position: absolute;
+	    -webkit-animation: questionFlight 5s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
+	}
 }
 
 
@@ -89,11 +144,15 @@ h2 {
 	&:before {
 		content: '\f202';
 		@extend %genericon;
+		position: absolute;
+		-webkit-animation: flyingOne 2s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
 	}
 
 	&:after {
 		content: '\f202';
 		@extend %genericon;
+		position: absolute;
+		-webkit-animation: secondFlight 10s cubic-bezier(0.215, 0.61, 0.355, 1) 1 forwards;
 	}
 }
 
@@ -102,20 +161,26 @@ div.randomTwitter {
 	height: 50px;
 	margin: 1% auto;
 	padding: 2% 0;
-	clear: both;
 	font-family: Arial, sans-serif;
 	font-size: 14px;
 	border: 1px solid black;
 	border-radius: 10px;
 	background-color: white;
+	color: $dark-grey;
+	position: absolute;
+	right: 25%;
+	top: 70%;
 }
 
 div.score {
 	@include font;
 	font-size: 20px;
-	float: right;
+	position: absolute;
+	bottom: 5px;
+	right: 2%;
 	padding: 10px;
 	margin: 2% 5%;
+	color: $dark-grey;
 
 	p {
 		margin: 0;
@@ -131,17 +196,26 @@ a.profile {
 		max-width: 200px;
 		max-height: 200px;
 
+		&:hover {
+			border: 5px solid $light-orange;
+		}
+
 	}
 }
 
 a.profile1 {
-	float: left;
-
+	// float: left;
+	position: absolute;
+	top: 28%;
+	left: 4%;
 
 }
 
 a.profile2 {
-	float: right;
+	// float: right;
+	position: absolute;
+	top: 28%;
+	right: 4%;
 }
 
 
