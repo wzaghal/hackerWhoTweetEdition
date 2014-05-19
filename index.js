@@ -12,6 +12,8 @@ var wrongUser= {
 	'imageUrl': 'https://pbs.twimg.com/profile_images/459722214279884800/7LuzEpXC_400x400.jpeg'
 }
 
+var score = 0;
+
 
 $(function() {
 
@@ -26,20 +28,24 @@ $(function() {
 //javascript and/or jquery to load user Tweet into randomTwitter class
 	$('.randomTwitter').text(user.tweet);
 
-
+	$('.score').append(score);
 
 
 //click event on image, and checking if the src they clicked on is equal to the imageURL that belongs to User
-	// $('.profile').on('click', function(e){
-	// 	e.preventDefault();
+	$('.profile img').on('click', function(e){
+		e.preventDefault();
 		
-	// 	if ((this).attr('src') === user.imageUrl){
-	// 		console.log('you clicked on the right user');
-	// 	}
-	// 	else{
-	// 		console.log('you clicked on wrong user');
-	// 	}
+		if (this.src === user.imageUrl){
+			console.log('you clicked on the right user');
+			//add css for correct user
+			//add to score
+		}
+		else{
+			console.log('you clicked on wrong user');
+			//add css for wrong user
+			//add to score
+		}
 
-	// });
+	});
 });
 
