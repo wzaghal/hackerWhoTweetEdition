@@ -26,6 +26,7 @@ Page Style
 *******/
 div.wrapper {
   text-align: center;
+  background: #5db5de url("img/shattered.png") repeat;
 }
 
 h1 {
