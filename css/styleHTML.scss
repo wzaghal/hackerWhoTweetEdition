@@ -79,11 +79,14 @@ div.score {
 	margin: 0 5%;
 }
 
-img.profile {
+a.profile {
+	width: 20%;
+
+	img {
 		border-radius: 50%;
 		border: 2px solid $orange;
+	}
 }
-
 
 a.profile1 {
 	float: left;
