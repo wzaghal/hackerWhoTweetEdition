@@ -56,7 +56,10 @@ div.score {
   margin: 0 5%;
 }
 
-img.profile {
+a.profile {
+  width: 20%;
+}
+a.profile img {
   border-radius: 50%;
   border: 2px solid #fab937;
 }
