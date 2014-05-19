@@ -43,6 +43,9 @@ h2 {
 }
 
 div.randomTwitter {
+  width: 50%;
+  height: 200px;
+  margin: 1% auto;
   padding: 20px;
   clear: both;
 }
@@ -53,10 +56,7 @@ div.score {
   margin: 0 5%;
 }
 
-a.profile {
-  width: 20%;
-}
-a.profile img {
+img.profile {
   border-radius: 50%;
   border: 2px solid #fab937;
 }
