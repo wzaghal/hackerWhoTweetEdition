@@ -1,9 +1,27 @@
+@import url(../genericons/genericons.css);
+/*********
+Imported sheets
+********/
 /*******
 Colors
 *******/
 /****
 Fonts
 *******/
+/*******
+Placeholders
+**********/
+h2:before, h2:after {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font: normal 50px/1 'Genericons';
+  vertical-align: middle;
+  color: #5db5de;
+  margin: 0 4%;
+}
+
 /******
 General Style
 
@@ -42,17 +60,26 @@ h2 {
   font-size: 40px;
   padding: 10px 0 0 0;
   margin: 2%;
+  color: #066591;
+}
+h2:before {
+  content: '\f202';
+}
+h2:after {
+  content: '\f202';
 }
 
 div.randomTwitter {
   width: 50%;
-  height: 60px;
+  height: 50px;
   margin: 1% auto;
-  padding: 6% 0 0 0;
+  padding: 2% 0;
   clear: both;
   font-family: Arial, sans-serif;
   font-size: 14px;
   border: 1px solid black;
+  border-radius: 10px;
+  background-color: white;
 }
 
 div.score {
@@ -60,20 +87,20 @@ div.score {
   font-size: 20px;
   float: right;
   padding: 10px;
-  margin: 5%;
+  margin: 2% 5%;
 }
 div.score p {
   margin: 0;
 }
 
 a.profile {
-  margin: 3% 5%;
+  margin: 2% 10%;
 }
 a.profile img {
   border-radius: 50%;
   border: 5px solid #fab937;
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
 }
 
 a.profile1 {
