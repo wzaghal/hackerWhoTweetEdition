@@ -1,4 +1,6 @@
 //temporary until we replace with API calls
+
+
 var user = { 
 	'name':'@proudfeet',
 	'tweet': "I made where's drake",
@@ -12,6 +14,7 @@ var wrongUser= {
 
 
 $(function() {
+	
 
 //javascript and/or jquery to load first image with User's imageURL
 
