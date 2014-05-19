@@ -20,7 +20,6 @@ $(function() {
 
 //javascript and/or jquery to load first image with User's imageURL
 	$('a.profile1 img').attr('src', user.imageUrl);
-	console.log(user.imageUrl);
 
 //javascript and/or jquery to load second image with wrongUser's imageUrl
 	$('a.profile2 img').attr('src', wrongUser.imageUrl);
@@ -29,6 +28,7 @@ $(function() {
 	$('.randomTwitter').text(user.tweet);
 
 	$('.score').append(score);
+
 
 
 //click event on image, and checking if the src they clicked on is equal to the imageURL that belongs to User
