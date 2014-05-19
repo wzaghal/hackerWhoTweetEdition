@@ -8,6 +8,14 @@ Fonts
 General Style
 
 *********/
+.clearfix:after {
+  content: " ";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+
 html, body, h1, h2, span, div, a, img, ul, li {
   margin: 0;
   padding: 0;
@@ -16,12 +24,34 @@ html, body, h1, h2, span, div, a, img, ul, li {
 /*****
 Page Style
 *******/
+div.wrapper {
+  text-align: center;
+}
+
 h1 {
   font-family: 'Droid Sans', sans-serif;
   font-size: 50px;
+  padding: 20px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 h2 {
   font-family: 'Chewy', cursive;
   font-size: 40px;
+  padding: 10px 0 0 0;
+}
+
+div.randomTwitter {
+  height: 300px;
+}
+
+div.score {
+  float: right;
+  padding: 10px;
+  margin: 0 5%;
+}
+
+a.profile img {
+  border-radius: 50%;
 }

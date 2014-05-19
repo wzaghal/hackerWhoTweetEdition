@@ -27,6 +27,14 @@ General Style
 
 *********/
 
+.clearfix:after {
+   content: " ";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
 html, body, h1, h2, span, div, a, img, ul, li {
 	margin: 0;
 	padding: 0;
@@ -37,7 +45,7 @@ Page Style
 *******/
 
 div.wrapper {
-	
+	text-align: center;
 
 }
 
@@ -45,12 +53,33 @@ div.wrapper {
 h1 {
 	@include font-bold;
 	font-size: 50px;
+	padding: 20px;
+	margin: 0 auto;
+	text-align: left;
 }
 
 
 h2 {
 @include font;
 font-size: 40px;
+padding: 10px 0 0 0;
+}
+
+div.randomTwitter {
+	height: 300px; //we might delete this when it has a content
+}
+
+div.score {
+	float: right;
+	padding: 10px;
+	margin: 0 5%;
+}
+
+a.profile {
+
+	img {
+		border-radius: 50%;
+	}
 }
 
 
